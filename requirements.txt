@@ -2,3 +2,4 @@ coverage
 djangocms-admin-style
 django-appconf
 djangocms-helper
+six

@@ -9,8 +9,13 @@ import django.template.loaders.app_directories
 from django.core.exceptions import ImproperlyConfigured, SuspiciousFileOperation
 from django.template import Origin
 from django.template.loader import get_template
-from django.utils import six
 from django.utils._os import safe_join
+
+try:
+    import six
+except ImportError as e:
+    from django.utils import six
+
 
 from .conf import settings
 
